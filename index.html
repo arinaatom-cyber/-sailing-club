@@ -190,6 +190,16 @@ nav{
 .news-meta{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#d4a85a;margin-bottom:0.6rem}
 .news-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:#fff;margin-bottom:0.8rem;line-height:1.2}
 .news-body{font-size:13px;color:#aabcd4;line-height:1.85;font-weight:300}
+.news-stats-intro{margin-bottom:2rem}
+.news-stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:2.5rem}
+.news-stat-card{border-radius:14px;overflow:hidden;background:#0d1c36;border:1px solid rgba(200,169,110,0.15);transition:border-color 0.3s,transform 0.3s}
+.news-stat-card:hover{border-color:rgba(212,168,90,0.45);transform:translateY(-4px)}
+.news-stat-img{aspect-ratio:9/16;overflow:hidden;background:#081428}
+.news-stat-img img{width:100%;height:100%;object-fit:cover;display:block}
+.news-stat-info{padding:1rem 1.1rem 1.2rem}
+.news-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:#d4a85a;line-height:1;margin-bottom:0.35rem}
+.news-stat-label{font-size:13px;color:#fff;font-weight:500;line-height:1.35;margin-bottom:0.45rem}
+.news-stat-desc{font-size:12px;color:#7a96bc;line-height:1.7;font-weight:300}
 </style>
 </head>
 <body>
@@ -515,13 +525,74 @@ nav{
 
 <!-- NEWS -->
 <div id="page-news" class="page">
-<div class="rules-page" style="max-width:820px">
+<div class="rules-page" style="max-width:980px">
   <span class="rules-tag">Жизнь клуба</span>
   <h2 class="rules-title">Последние <em>новости</em></h2>
   <div class="rules-rule"></div>
   <p style="font-size:14px;color:#7a96bc;margin-bottom:2.5rem;line-height:1.75">
     Мы развиваемся, знакомимся, учимся и движемся вперёд. Вот что происходит в нашем клубе ⛵
   </p>
+
+  <div class="news-card news-card-gold news-stats-intro">
+    <div class="news-meta">📊 Итоги · 2026</div>
+    <h3 class="news-title">Наш клуб с начала года — в цифрах</h3>
+    <p class="news-body">
+      За первые месяцы 2026 года мы провели десятки тренировок и лекций, вышли на регаты,
+      познакомили с парусным спортом новых ребят и встретили на воде целые стаи дельфинов.
+      За каждой цифрой — реальные выходы, занятия и люди, которые делают клуб живым.
+    </p>
+  </div>
+
+  <div class="news-stats-grid">
+    <article class="news-stat-card">
+      <div class="news-stat-img"><img src="images/news/stat-trenirovki-96.png" alt="96 тренировок с начала года"/></div>
+      <div class="news-stat-info">
+        <div class="news-stat-num">96</div>
+        <div class="news-stat-label">тренировок проведено с начала года</div>
+        <p class="news-stat-desc">Регулярные выходы на воду для новичков и сборной — отработка манёвров, командной работы и гоночных ситуаций.</p>
+      </div>
+    </article>
+    <article class="news-stat-card">
+      <div class="news-stat-img"><img src="images/news/stat-lekcii-42.png" alt="42 часа лекций по парусному спорту"/></div>
+      <div class="news-stat-info">
+        <div class="news-stat-num">42</div>
+        <div class="news-stat-label">часа лекций по парусному спорту</div>
+        <p class="news-stat-desc">Теория каждую среду: правила, тактика, безопасность и разбор ситуаций — фундамент перед выходом на воду.</p>
+      </div>
+    </article>
+    <article class="news-stat-card">
+      <div class="news-stat-img"><img src="images/news/stat-regaty-4.png" alt="4 участия в регатах"/></div>
+      <div class="news-stat-info">
+        <div class="news-stat-num">4</div>
+        <div class="news-stat-label">участия в регатах с начала года</div>
+        <p class="news-stat-desc">Сборная клуба выходит на соревнования — проверяем навыки в бою и возвращаемся с опытом для всей команды.</p>
+      </div>
+    </article>
+    <article class="news-stat-card">
+      <div class="news-stat-img"><img src="images/news/stat-probnye-85.png" alt="85 человек на пробном выходе в феврале"/></div>
+      <div class="news-stat-info">
+        <div class="news-stat-num">85</div>
+        <div class="news-stat-label">человек пришли на пробный выход в феврале</div>
+        <p class="news-stat-desc">Много новых лиц попробовали парусный спорт впервые — знакомство с лодкой, ветром и командой на воде.</p>
+      </div>
+    </article>
+    <article class="news-stat-card">
+      <div class="news-stat-img"><img src="images/news/stat-delfiny.png" alt="Сотни дельфинов во время тренировок"/></div>
+      <div class="news-stat-info">
+        <div class="news-stat-num">Сотни</div>
+        <div class="news-stat-label">дельфинов мы встретили с вами во время тренировок</div>
+        <p class="news-stat-desc">Черноморские тренировки с сюрпризами — иногда лучшие напарники плывут рядом с лодкой.</p>
+      </div>
+    </article>
+    <article class="news-stat-card">
+      <div class="news-stat-img"><img src="images/news/stat-organizatory-15.png" alt="15 организаторов клуба"/></div>
+      <div class="news-stat-info">
+        <div class="news-stat-num">15</div>
+        <div class="news-stat-label">организаторов обеспечили соревнования, лекции и тренировки</div>
+        <p class="news-stat-desc">Команда поддержки держит расписание, выходы и учебный процесс — без них клуб не существует.</p>
+      </div>
+    </article>
+  </div>
 
   <div class="news-card">
     <div class="news-meta">🌊 Май 2025</div>
